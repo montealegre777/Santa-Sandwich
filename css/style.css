@@ -110,7 +110,7 @@ h6,
   line-height: 1.2;
   letter-spacing:2px;
   margin-bottom:20px;
-  color: #454545;
+  color: #f8bf2c;
 }
 
 h1 {
@@ -196,7 +196,7 @@ p.section-subtitle.grey{
 }
 
 .separator_wrapper_white::after, .separator_wrapper_white::before {
-	background-color: #ddd;
+	background-color: #efefef;
 	display: inline-block;
 	vertical-align: middle;
 	content: "";
@@ -257,7 +257,7 @@ iframe{
 }
 
 .section-white{
-	background-color:#fff;
+	background-color:#f1f0f0;
 	padding:90px 0;
 }
 
@@ -1868,5 +1868,116 @@ p.contact_success_box{
 	.instagram-text{
 		display:none;
 	}
+	
+}
+
+
+
+
+
+
+
+
+/*seccion de informacion*/
+
+
+
+.info-section {
+    padding: 80px 20px;
+    background: #151515;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.info-logo h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.info-logo span {
+    font-size: 14px;
+    color: #b33;
+}
+
+.info-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.info-box {
+    width: 260px;
+}
+
+.info-icon {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #f8f7f7;
+}
+
+.info-divider {
+    width: 1px;
+    background: #fefefe;
+}
+
+.info-actions {
+    margin-top: 50px;
+}
+
+.info-btn {
+    display: inline-block;
+    width: 158px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 6px;
+    background: #f8bf2c;
+    color: #f0f0f0;
+    font-size: 18px;
+    margin: 0 10px;
+	box-shadow: #656565 1px 4px 8px;
+	transition: background 0.3s ease;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	
+}
+
+
+
+/* ----- preguntas frecuentes ----- */
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.faq-question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-toggle {
+    
+    margin-left: 10px;
+}
+
+.section-preguntas {
+	padding: 80px 20px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	color: #898989;
 	
 }
