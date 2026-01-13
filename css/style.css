@@ -105,12 +105,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing:2px;
-  margin-bottom:20px;
-  color: #f8bf2c;
+ font-size:80px;
+	line-height:60px;
+	color:#F2B410;
+	font-family:initial
 }
 
 h1 {
@@ -223,6 +221,7 @@ iframe{
 
 .width-100 {
 	width: 100%;
+	
 }
 
 .medium {
@@ -1872,90 +1871,6 @@ p.contact_success_box{
 }
 
 
-
-
-
-
-
-
-/*seccion de informacion*/
-
-
-
-.info-section {
-    padding: 80px 20px;
-    background: #151515;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.info-logo h1 {
-    font-size: 42px;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
-}
-
-.info-logo span {
-    font-size: 14px;
-    color: #b33;
-}
-
-.info-container {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 40px;
-}
-
-.info-box {
-    width: 260px;
-}
-
-.info-icon {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-.info-box h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.info-box p {
-    font-size: 17px;
-    line-height: 1.6;
-    color: #f8f7f7;
-}
-
-.info-divider {
-    width: 1px;
-    background: #fefefe;
-}
-
-.info-actions {
-    margin-top: 50px;
-}
-
-.info-btn {
-    display: inline-block;
-    width: 158px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 6px;
-    background: #f8bf2c;
-    color: #f0f0f0;
-    font-size: 18px;
-    margin: 0 10px;
-	box-shadow: #656565 1px 4px 8px;
-	transition: background 0.3s ease;
-	font-family: 'Lora', serif;
-	font-weight: 700;
-	
-}
-
-
-
 /* ----- preguntas frecuentes ----- */
 
 .faq-answer {
@@ -1975,9 +1890,173 @@ p.contact_success_box{
 }
 
 .section-preguntas {
-	padding: 80px 20px;
+	padding: 40px 20px;
 	text-align: center;
 	font-family: Arial, sans-serif;
 	color: #898989;
 	
+}
+
+.titulo-carnes {
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #f2b410;
+	text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+/* Estilos generales de la sección */
+.info-section {
+    padding: 60px 20px;
+    background-color: #080808; /* Fondo claro para resaltar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.info-logo h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+/* Contenedor Flex */
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Cajas de información */
+.info-box {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px); /* Efecto hover elegante */
+}
+
+.info-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    color: #e67e22; /* Color naranja/carne para resaltar */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info-box p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Divisores (solo visibles en Desktop) */
+.info-divider {
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #ddd, transparent);
+    margin: 0 10px;
+}
+
+/* Botones de acción */
+.info-actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-btn {
+    padding: 15px 35px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+/* Botón WhatsApp */
+.info-btn:first-child {
+    background-color: #bdb9b8;
+    color: white;
+}
+
+/* Botón Rappi / Otro */
+.info-btn:last-child {
+    background-color: #bdb9b8;
+    color: white;
+}
+
+.info-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ----- RESPONSIVE (Móviles y Tablets) ----- */
+@media (max-width: 900px) {
+    .info-container {
+        flex-direction: column; /* Apilar en vertical */
+        align-items: center;
+    }
+
+    .info-divider {
+        display: none; /* Ocultar líneas en móvil */
+    }
+
+    .info-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .info-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .info-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+
+
+
+.inner-banner{
+	background-color: #080808;
+}
+
+
+
+
+@media (max-width: 991px) {
+    .flex-reverse {
+        display: flex;
+        flex-direction: column-reverse; /* Esto pone lo de abajo arriba */
+    }
+
+    .flex-reverse .col-md-6 {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+    }
 }
